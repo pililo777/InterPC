@@ -1,0 +1,37 @@
+desde i=1 hasta 25
+haz
+	rr=random(0)
+	decimales 14
+	imprimir rr
+fin-haz
+
+//imprimir 'test de ficheros indice'
+
+registro clientes 'contacts.dbf'
+	CCLAVE 10
+	CNOMBRE 61
+	CAPELLIDO 61
+	CTELEFONO 10
+fin-registro
+
+INDICE='contacts.ndx'
+
+use INDICE
+
+CODIGO = '10005'
+NOMBRE = ' '
+APELLIDO = ' '
+TELFONO = ' '
+
+encontrado = 0
+nroreg = 0
+
+buscar CODIGO encontrado nroreg
+
+si encontrado = 1 entonces
+	buscar registro clientes nroreg
+	imprimir 'encontrado en posicion: ', nroreg
+	APELLIDO = CAPELLIDO
+	imprimir 'APELLIDO = ', APELLIDO
+si-fin
+

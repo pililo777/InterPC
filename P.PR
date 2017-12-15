@@ -1,0 +1,7 @@
+imprimir 'hola'
+desde x = 1 hasta 8
+haz
+   imprimir x
+fin-haz
+
+

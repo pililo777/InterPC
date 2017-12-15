@@ -1,0 +1,40 @@
+NOMBRE='RUBEN'
+TEMP=' '
+n=0
+
+imprimir NOMBRE, largo(NOMBRE)
+TEMP = derecha(NOMBRE,3)
+imprimir TEMP, largo(TEMP)
+n = instr(NOMBRE, TEMP)
+imprimir 'n=', n
+NOMBRE = 'PEPITO'
+imprimir NOMBRE
+push NOMBRE
+llamar prueba
+pop NOMBRE
+imprimir NOMBRE
+NOMBRE2 = 'PEPITO'
+si NOMBRE = NOMBRE2 entonces
+	imprimir 'son iguales'
+sino
+	imprimir 'error en comparacion'
+si-fin
+
+terminar
+
+
+proc prueba
+imprimir '--------------'
+NOMBRE='RUBEN'
+TEMP=' '
+n=0
+
+imprimir NOMBRE, largo(NOMBRE)
+TEMP = derecha(NOMBRE,3)
+imprimir TEMP, largo(TEMP)
+n = instr(NOMBRE, TEMP)
+imprimir 'n=', n
+imprimir '============'
+fin
+
+
